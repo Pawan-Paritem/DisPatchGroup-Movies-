@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Closures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-TP-UTa">
+                                <rect key="frame" x="321" y="94" width="73" height="44"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Eik-Vb-JIT"/>
+                                    <constraint firstAttribute="width" constant="73" id="uVs-48-mHx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Download">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9N-Op-3s1"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-bf-rv0">
+                                <rect key="frame" x="20" y="529" width="374" height="333"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwq-J6-AlC">
+                                <rect key="frame" x="20" y="489" width="275" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="C4j-Gx-RTX"/>
+                                    <constraint firstAttribute="width" constant="275" id="Vcf-kb-iHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nft-Fa-nCn">
+                                <rect key="frame" x="20" y="148" width="374" height="333"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="333" id="bDt-GU-UML"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-sx-hIp">
+                                <rect key="frame" x="20" y="101" width="149" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="gXK-AN-nzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DispatchGroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-mz-jTL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="42"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5PG-TP-UTa" firstAttribute="top" secondItem="DaI-mz-jTL" secondAttribute="bottom" constant="8" symbolic="YES" id="0K9-cJ-88o"/>
+                            <constraint firstItem="DaI-mz-jTL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="80m-Y1-mJK"/>
+                            <constraint firstItem="Nft-Fa-nCn" firstAttribute="top" secondItem="5PG-TP-UTa" secondAttribute="bottom" constant="10" id="AEU-8o-CJQ"/>
+                            <constraint firstItem="5PG-TP-UTa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CK9-0Z-9fp"/>
+                            <constraint firstItem="fHc-bf-rv0" firstAttribute="leading" secondItem="2Td-sx-hIp" secondAttribute="leading" id="Ed2-hJ-A8h"/>
+                            <constraint firstItem="Nft-Fa-nCn" firstAttribute="top" secondItem="2Td-sx-hIp" secondAttribute="bottom" constant="11" id="IId-GS-d7U"/>
+                            <constraint firstItem="Wwq-J6-AlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NaV-eg-RGi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nft-Fa-nCn" secondAttribute="trailing" constant="20" id="ON4-aY-yoX"/>
+                            <constraint firstItem="2Td-sx-hIp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="Qxu-Xz-5Of"/>
+                            <constraint firstItem="DaI-mz-jTL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sq4-Pa-VHy"/>
+                            <constraint firstItem="fHc-bf-rv0" firstAttribute="top" secondItem="Wwq-J6-AlC" secondAttribute="bottom" constant="11" id="VQv-jK-54j"/>
+                            <constraint firstItem="Wwq-J6-AlC" firstAttribute="top" secondItem="Nft-Fa-nCn" secondAttribute="bottom" constant="8" symbolic="YES" id="XTf-wQ-Lcf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5PG-TP-UTa" secondAttribute="trailing" constant="20" id="aAf-PO-jx3"/>
+                            <constraint firstItem="fHc-bf-rv0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eTT-d5-50c"/>
+                            <constraint firstItem="Nft-Fa-nCn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pFc-Dv-0VJ"/>
+                            <constraint firstItem="fHc-bf-rv0" firstAttribute="trailing" secondItem="Nft-Fa-nCn" secondAttribute="trailing" id="pfL-py-nVO"/>
+                            <constraint firstItem="DaI-mz-jTL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="saf-Yc-HEl"/>
+                            <constraint firstItem="fHc-bf-rv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zz9-KJ-cSe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadLabel" destination="Wwq-J6-AlC" id="jPd-w2-Zyn"/>
+                        <outlet property="pendingLabel" destination="2Td-sx-hIp" id="Hkr-bx-XpO"/>
+                        <outlet property="tbView" destination="Nft-Fa-nCn" id="4vp-de-9jC"/>
+                        <outlet property="tbView2" destination="fHc-bf-rv0" id="1lY-An-GWG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
